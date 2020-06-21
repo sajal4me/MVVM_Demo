@@ -12,17 +12,18 @@ typealias CellRegisterProtocol = NibLoadableView & ReusableView
 
 extension UITableViewCell: CellRegisterProtocol {}
 
-protocol ReusableView: class {
+protocol ReusableView: AnyObject {
     static var defaultReuseIdentifier: String { get }
 }
 
 extension ReusableView where Self: UIView {
+    
     static var defaultReuseIdentifier: String {
         return String(describing: self)
     }
 }
 
-protocol NibLoadableView: class {
+protocol NibLoadableView: AnyObject {
     static var nibName: String { get }
 }
 
