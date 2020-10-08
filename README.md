@@ -1,2 +1,2 @@
-# MVVM_Demo
-This repository is a represent clean MVVM architecture based on POP.
+# Clean MVVM Architecture POC
+This repository represents A Clean MVVM Architecture based on POP.
